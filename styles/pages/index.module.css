@@ -1,0 +1,15 @@
+.container {
+  min-height: 100vh;
+  width: 100%;
+  padding: var(--padding-small);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text { 
+  text-align: center;
+  word-break: break-word;
+  white-space: pre-wrap;
+}

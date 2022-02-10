@@ -1,0 +1,69 @@
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.playButton {
+  composes: roundButton from '../utils.module.css';
+  background-image: radial-gradient(100% 100% at 100% 0, var(--color-green-light) 0, var(--color-green) 100%);
+  box-shadow:
+    rgba(45, 35, 66, .4) 0 4px 8px,
+    rgba(45, 35, 66, .3) 0 7px 13px -3px,
+    var(--color-green) 0 -3px 0 inset;
+}
+
+.playButton::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-top: min(40px, calc(90vw/10)) solid transparent;
+  border-left: min(80px, calc(90vw/5)) solid var(--color-white);
+  border-bottom: min(40px, calc(90vw/10)) solid transparent;
+}
+
+.deleteButton {
+  composes: roundButton from '../utils.module.css';
+  background-image: radial-gradient(100% 100% at 100% 0, var(--color-orange-light) 0, var(--color-orange) 100%);
+    box-shadow:
+    rgba(45, 35, 66, .4) 0 4px 8px,
+    rgba(45, 35, 66, .3) 0 7px 13px -3px,
+    var(--color-orange) 0 -3px 0 inset;
+}
+
+.deleteButton::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  width: 40%;
+  height: 40%;
+  border-top: 15px solid var(--color-white);
+  border-left: 15px solid var(--color-white);
+}
+
+.abortButton {
+  composes: roundButton from '../utils.module.css';
+  background-image: radial-gradient(100% 100% at 100% 0, var(--color-red-light) 0, var(--color-red) 100%);
+    box-shadow:
+    rgba(45, 35, 66, .4) 0 4px 8px,
+    rgba(45, 35, 66, .3) 0 7px 13px -3px,
+    var(--color-red) 0 -3px 0 inset;
+}
+
+.abortButton::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 45%;
+  height: 45%;
+  background: var(--color-white);
+}

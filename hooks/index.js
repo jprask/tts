@@ -1,0 +1,1 @@
+export { usePhrase } from './usePhrase'
