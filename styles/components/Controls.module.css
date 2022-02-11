@@ -22,9 +22,9 @@
   transform: translate(-50%, -50%);
   width: 0;
   height: 0;
-  border-top: min(40px, calc(90vw/10)) solid transparent;
+  border-top: 40px solid transparent;
   border-left: min(80px, calc(90vw/5)) solid var(--color-white);
-  border-bottom: min(40px, calc(90vw/10)) solid transparent;
+  border-bottom: 40px solid transparent;
 }
 
 .deleteButton {
