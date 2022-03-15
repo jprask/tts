@@ -3,8 +3,9 @@ import { range } from "../algorithms";
 // https://youtu.be/fOONIlhXFh4?t=96
 export const LETTERS =
   String
-    .fromCodePoint(32, ...range(122, 97))
+    .fromCodePoint(32, ...range(122, 97), 231)
     .split('')
+    .sort()
 
 const ABORT_KEYS = ['Esc', 'Escape']
 
